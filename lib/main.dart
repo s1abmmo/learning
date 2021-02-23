@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Test());
+  runApp(MaterialApp(
+    home: Test(),
+  ));
 }
 
 class Test extends StatefulWidget {
+  @override
   _Test createState() => _Test();
 }
 
 class _Test extends State<Test> {
+  @override
   Widget build(BuildContext context) {
-
-    // double width = MediaQuery.of(context).size.width;
-    // double height = MediaQuery.of(context).size.height;
-
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-      ),
+      body: Container(),
     );
   }
 }
